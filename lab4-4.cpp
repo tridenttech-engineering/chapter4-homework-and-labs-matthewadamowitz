@@ -8,7 +8,7 @@ int main()
 {
 
 //declare constants and variables
-  const double PI = 3.14159;
+  const double PI = 3.14;
   double radius = 0.0;
   double volume = 0.0;
   double height = 0.0;
