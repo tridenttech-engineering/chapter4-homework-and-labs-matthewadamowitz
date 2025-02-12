@@ -35,7 +35,7 @@ int main() {
   // Display results 
   cout << fixed << setprecision(1);
   
-  cout <<"\nTotal pizzas sold:" << totalPizzas << endl;
+  cout <<"\n Total pizzas sold:" << totalPizzas << endl;
   
   cout << "Small pizzas sold: " << smallPizzas << " (" << smallPercent << "%)" << endl;
   cout << "Medium pizzas sold: " << mediumPizzas << " (" << mediumPercent << "%)" << endl;
