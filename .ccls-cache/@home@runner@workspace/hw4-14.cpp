@@ -35,12 +35,12 @@ int main() {
   }
   
   // Display results 
-  cout << fixed << setprecision(1);
-  cout << "\nTotal: " << total << endl;
-  cout << "Percent Small: " << percSmall << "%" << endl;
-  cout << "Percentage Medium: " << percMedium << "%" << endl;
-  cout << "Percentage Large: " << percLarge << "%" << endl;
-  cout << "Percentage Family: " << percFamily << "%" << endl;
+  cout << fixed << setprecision(4);
+  cout << "\nTotal pizzas: " << total << endl;
+  cout << "Percent Small percentage: " << percSmall << "%" << endl;
+  cout << "Percentage Medium percentage: " << percMedium << "%" << endl;
+  cout << "Percentage Large percentage: " << percLarge << "%" << endl;
+  cout << "Percentage Family percentage: " << percFamily << "%" << endl;
 
   return 0;
 } // end of main function
