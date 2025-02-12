@@ -6,30 +6,28 @@
 using namespace std;
 
 int main() {
-  // declare named constants and variables
-  double salePrice = 0.0;
-  double taxRate = 0.0;
-  double salesTax = 0.0;
-  double cost = 0.0;
+  // declare variables
+  double beginningBalance = 0.0;
+  double totalDeposits = 0.0;
+  double totalWitdrawals = 0.0;
+  double endingBalance = 0.0;
 
-  // enter input item
-  cout << "Sale price:";
-  cin >> salePrice;
-  cout << "Tax rate:"; 
-  cin >> taxRate;
+  // enter input items; balance, deposits, and witdrawals
+  cout << "Enter beginning balance:";
+  cin >> beginningBalance;
 
-  // convert percentage to decimal 
-  tanRate /= 100.0; 
-  cout << "Converted Tax Rate:" << taxRate << endl; //debug
+  cout << "Enter toal deposits:"; 
+  cin >> totalDeposits;
 
-  // calculate and display the sales tax
-  salesTax = salePrice * taxRate;
-  cout << "Sales Tax: $" << salesTax << endl; //debug 
-  cost = salePrice + salesTax;
+  cout << "Enter total witdrawals:";
+  cin >> totalWitdrawals;
 
-  //Format 
+  // calculate ending balance
+  endingBalance = beginningBalance + totalDeposits - totalWitdrawals;
+
+  //Format and display results
   cout << fixed << setprecision(2);
-  cout << "Cost: $" << cost << endl;
+  cout << "Ending balance: $" << endingBalance << endl;
 
   return 0;
 } // end of main function
