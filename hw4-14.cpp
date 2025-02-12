@@ -36,11 +36,11 @@ int main() {
   
   // Display results 
   cout << fixed << setprecision(1);
-  cout << "\nTotal pizzas sold: " << total << endl;
-  cout << "Percentage of small pizzas sold: " << percSmall << "%" << endl;
-  cout << "Percentage of medium pizzas sold: " << percMedium << "%" << endl;
-  cout << "Percentage of large pizzas sold: " << percLarge << "%" << endl;
-  cout << "Percentage of family pizzas sold: " << percFamily << "%" << endl;
+  cout << "\nTotal: " << total << endl;
+  cout << "Percent Small: " << percSmall << "%" << endl;
+  cout << "Percentage Medium: " << percMedium << "%" << endl;
+  cout << "Percentage Large: " << percLarge << "%" << endl;
+  cout << "Percentage Family: " << percFamily << "%" << endl;
 
   return 0;
 } // end of main function
