@@ -7,40 +7,40 @@ using namespace std;
 
 int main() {
   // declare variables
-  int smallPizzas, mediumPizzas, largePizzas, familyPizzas, totalPizzas;
-  double smallPercent, mediumPercent, largePercent, familyPercent;
+  int small, medium, large, family;
+  int total; 
+  double percSmall, percMedium, percLarge, percFamily;
   
   // enter input items 
   cout << "Enter the number of small pizzas sold: ";
-  cin >> smallPizzas;
+  cin >> small;
   cout << "Enter the number of medium pizzas sold: ";
-  cin >> mediumPizzas;
+  cin >> medium;
   cout << "Enter the number of large pizzas sold: ";
-  cin >> largePizzas;
+  cin >> large;
   cout << "Enter the number of family pizzas sold: ";
-  cin >> familyPizzas;
+  cin >> family;
 
   // calculate number of pizzas sold 
-  totalPizzas = smallPizzas + mediumPizzas + largePizzas +familyPizzas; 
+  total = small + medium + large + family;
 
   // calculate percentages of pizzas sold
-  if (totalPizzas > 0) {
-    smallPercent = (static_cast<double>(smallPizzas) / totalPizzas) *100; 
-    mediumPercent = (static_cast<double>(mediumPizzas) / totalPizzas) *100;
-    largePercent = (static_cast<double>(largePizzas) / totalPizzas) *100;
-    familyPercent = (static_cast<double>(familyPizzas) / totalPizzas) *100;
-  } else {
-    smallPercent = mediumPercent = largePercent = familyPercent = 0.0;
+  if (total > 0) {
+    percSmall = (static_cast<double>(small) / total) * 100; 
+    percMedium = (static_cast<double>(medium) / total) * 100;
+    percLarge = (static_cast<double>(large) / total) * 100;
+    percFamily = (static_cast<double>(family) / total) * 100;
+  } else { 
+    percSmall = percMedium = percLarge = percFamily = 0;
   }
+  
   // Display results 
   cout << fixed << setprecision(1);
-  
-  cout <<"\n Total pizzas sold:" << totalPizzas << endl;
-  
-  cout << "Small pizzas sold: " << smallPizzas << " (" << smallPercent << "%)" << endl;
-  cout << "Medium pizzas sold: " << mediumPizzas << " (" << mediumPercent << "%)" << endl;
-    cout << "Large pizzas sold: " << largePizzas << " (" << largePercent << "%)" << endl; 
-    cout << "Family pizzas sold: " << familyPizzas << " (" << familyPercent << "%)" << endl;
-  
+  cout << "\nTotal pizzas sold: " << total << endl;
+  cout << "Percentage of small pizzas sold: " << percSmall << "%" << endl;
+  cout << "Percentage of medium pizzas sold: " << percMedium << "%" << endl;
+  cout << "Percentage of large pizzas sold: " << percLarge << "%" << endl;
+  cout << "Percentage of family pizzas sold: " << percFamily << "%" << endl;
+
   return 0;
 } // end of main function

@@ -22,7 +22,7 @@ int main()
   cin >> height;
   
 //calculate volume
-  volume = PI * radius * radius * height;
+  volume = PI * radius * radius * (height / 2.0);
 
 //display volume
   cout << "Volume: " << volume << endl;
