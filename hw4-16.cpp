@@ -11,7 +11,6 @@ int main()
 const double increase = 1.05;
 double store1 = 0.0;
 double store2 = 0.0;
-double total = 0.0;
 
 //declare and initialize int variables
 int store1Int = 0;
@@ -25,16 +24,16 @@ cin >> store2;
 
 //calculate total sales
   
-store1Int = static_cast<int>(store1 * increase * 100 +0.5);
-store2Int = static_cast<int>(store2 * increase * 100 +0.5);
-total = store1Int + store2Int; 
+store1Int = static_cast<int>(store1 * increase * 100 + 0.5);
+store2Int = static_cast<int>(store2 * increase * 100 + 0.5);
+totalInt = store1Int + store2Int; 
 
 //Output results
 cout << fixed << setprecision(2) << endl;
 cout << store1Int / 100.0 << " --->Store 1" << endl;
-cout << store2 / 100.0 << " --->Store 2" << endl;
+cout << store2Int / 100.0 << " --->Store 2" << endl;
 cout << "-----------------" << endl;
-cout << total / 100.0 << " --->Total" << endl;
+cout << totalInt / 100.0 << " --->Total" << endl;
 
   return 0;
 }	//end of main function
