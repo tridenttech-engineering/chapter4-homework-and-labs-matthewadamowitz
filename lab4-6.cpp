@@ -18,7 +18,7 @@ int main()
 	cin >> height;
 
 	//calculate and display area
-	area = base * height / 2;
+	area = (base * height) / 2.0;
 	cout << "Area: " << area << endl;
 
 	return 0;
